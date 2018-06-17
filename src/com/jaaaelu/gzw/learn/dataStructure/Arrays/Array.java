@@ -1,4 +1,4 @@
-package com.jaaaelu.gzw.learn.dataStructure.arrays;
+package com.jaaaelu.gzw.learn.dataStructure.Arrays;
 
 /**
  * 自定义的数组类，支持增删改查

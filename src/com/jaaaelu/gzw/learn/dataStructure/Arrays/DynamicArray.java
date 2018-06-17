@@ -1,4 +1,4 @@
-package com.jaaaelu.gzw.learn.dataStructure.arrays;
+package com.jaaaelu.gzw.learn.dataStructure.Arrays;
 
 public class DynamicArray<T> {
     /**
@@ -62,6 +62,20 @@ public class DynamicArray<T> {
         return size == 0;
     }
 
+
+    /**
+     * 获取对应下标的元素值
+     *
+     * @param index 下标
+     * @return 对应值
+     */
+    public T get(int index) {
+        if (index < 0 || index >= size) {
+            throw new IllegalArgumentException("大哥这个参数真的真的不合法：" + index);
+        }
+        return data[index];
+    }
+
     /**
      * 向数组某个位置插入值，本来这个地方以及后面的值向后移动一位
      *
@@ -95,10 +109,12 @@ public class DynamicArray<T> {
      *
      * @param index 下标
      */
-    public void remove(int index) {
+    public T remove(int index) {
         if (index < 0 || index >= size) {
             throw new IllegalArgumentException("大哥这个参数真的真的不合法：" + index);
         }
+
+        T ret = data[index];
 
         //  删除也就是覆盖的操作，后一个覆盖前一个，从前往后
         for (int i = index + 1; i < size; i++) {
@@ -116,6 +132,8 @@ public class DynamicArray<T> {
         if (size == getCapacity() / 4 && getCapacity() / 2 != 0) {
             resize(getCapacity() / 2);
         }
+
+        return ret;
     }
 
     /**

@@ -1,4 +1,4 @@
-package com.jaaaelu.gzw.learn.dataStructure.arrays;
+package com.jaaaelu.gzw.learn.dataStructure.Arrays;
 
 public class ArrayTest {
 
