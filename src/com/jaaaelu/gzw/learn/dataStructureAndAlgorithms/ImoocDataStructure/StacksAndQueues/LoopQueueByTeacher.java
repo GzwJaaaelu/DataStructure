@@ -1,4 +1,4 @@
-package com.jaaaelu.gzw.learn.dataStructure.StacksAndQueues;
+package com.jaaaelu.gzw.learn.dataStructureAndAlgorithms.ImoocDataStructure.StacksAndQueues;
 
 public class LoopQueueByTeacher<E> implements Queue<E> {
     private static final int DEFAULT_ARRAY_CAPACITY = 10;

@@ -27,25 +27,25 @@ O 的算法复杂度表示的是渐进时间复杂度，实际上描述 n 趋近
 
 分析动态数组的时间复杂度：
 1.添加操作（综合来看是 O(n)，我们需要关注最坏的情况，resize 也是 O(n) 的）
-- addLast(value) O(1)，O(1) 表示我们的耗时操作和我们的数组大小是没有关系的
-- addFirst(value) O(n)，要向第一个元素添加值就会导致后续元素全部需要往后移一位
-- add(index, e) O(n/2) = O(n)，因为 index 可能为 0 ～ size 的任意一个，向前一些耗的时间久一些，向后一些耗的时间短一些
+ - addLast(value) O(1)，O(1) 表示我们的耗时操作和我们的数组大小是没有关系的
+ - addFirst(value) O(n)，要向第一个元素添加值就会导致后续元素全部需要往后移一位
+ - add(index, e) O(n/2) = O(n)，因为 index 可能为 0 ～ size 的任意一个，向前一些耗的时间久一些，向后一些耗的时间短一些
 2.删除操作（综合来看是 O(n)，我们需要关注最坏的情况，resize 也是 O(n) 的）
-- removeLast() O(1)
-- removeFirst() O(n)
-- remove(index, e) O(n/2) = O(n)
+ - removeLast() O(1)
+ - removeFirst() O(n)
+ - remove(index, e) O(n/2) = O(n)
 3.修改操作
-- set(index, value) O(1)
+ - set(index, value) O(1)
 4.查询操作
-- get(index) O(1)
-- contains(value) O(n)
-- find(value) O(n)
+ - get(index) O(1)
+ - contains(value) O(n)
+ - find(value) O(n)
 
 综上动态数组的时间复杂度
-- 增：O(n)
-- 删：O(n)
-- 改：已知索引O(1)，未知索引O(n)
-- 查：已知索引O(1)，未知索引O(n)
+ - 增：O(n)
+ - 删：O(n)
+ - 改：已知索引O(1)，未知索引O(n)
+ - 查：已知索引O(1)，未知索引O(n)
 
 
 均摊复杂度

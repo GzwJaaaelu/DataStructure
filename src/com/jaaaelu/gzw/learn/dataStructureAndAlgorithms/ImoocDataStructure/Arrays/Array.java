@@ -1,4 +1,4 @@
-package com.jaaaelu.gzw.learn.dataStructure.Arrays;
+package com.jaaaelu.gzw.learn.dataStructureAndAlgorithms.ImoocDataStructure.Arrays;
 
 /**
  * 自定义的数组类，支持增删改查

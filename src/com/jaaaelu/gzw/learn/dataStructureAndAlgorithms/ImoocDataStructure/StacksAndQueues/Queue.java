@@ -1,4 +1,4 @@
-package com.jaaaelu.gzw.learn.dataStructure.StacksAndQueues;
+package com.jaaaelu.gzw.learn.dataStructureAndAlgorithms.ImoocDataStructure.StacksAndQueues;
 
 /**
  * 栈的一些基本操作：

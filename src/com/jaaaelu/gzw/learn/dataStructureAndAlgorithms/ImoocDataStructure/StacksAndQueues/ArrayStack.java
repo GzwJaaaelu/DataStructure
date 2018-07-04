@@ -1,31 +1,30 @@
-package com.jaaaelu.gzw.learn.dataStructure.StacksAndQueues;
+package com.jaaaelu.gzw.learn.dataStructureAndAlgorithms.ImoocDataStructure.StacksAndQueues;
 
-import com.jaaaelu.gzw.learn.dataStructure.Arrays.DynamicArray;
+import com.jaaaelu.gzw.learn.dataStructureAndAlgorithms.ImoocDataStructure.Arrays.DynamicArray;
 
-public class ArrayQueue<E> implements Queue<E> {
+public class ArrayStack<E> implements Stack<E> {
     private DynamicArray<E> array;
 
-    public ArrayQueue(int capacity) {
+    public ArrayStack(int capacity) {
         array = new DynamicArray<>(capacity);
     }
 
-    public ArrayQueue() {
+    public ArrayStack() {
         array = new DynamicArray<>();
     }
 
-
     @Override
-    public void enqueue(E element) {
-        array.add(array.getSize(), element);
+    public void push(E element) {
+        array.add(0, element);
     }
 
     @Override
-    public E dequeue() {
+    public E pop() {
         return array.remove(0);
     }
 
     @Override
-    public E getFront() {
+    public E peek() {
         return array.get(0);
     }
 
@@ -50,7 +49,7 @@ public class ArrayQueue<E> implements Queue<E> {
 
     private String getStackStr() {
         StringBuilder result = new StringBuilder();
-        result.append("Queue：");
+        result.append("Stack：");
         result.append("[");
         for (int i = 0; i < array.getSize(); i++) {
             result.append(array.get(i));

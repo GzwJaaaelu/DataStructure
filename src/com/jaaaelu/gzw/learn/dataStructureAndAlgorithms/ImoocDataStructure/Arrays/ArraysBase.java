@@ -1,4 +1,4 @@
-package com.jaaaelu.gzw.learn.dataStructure.Arrays;
+package com.jaaaelu.gzw.learn.dataStructureAndAlgorithms.ImoocDataStructure.Arrays;
 
 public class ArraysBase {
     //  数组基础
