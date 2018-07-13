@@ -1,0 +1,16 @@
+集合和映射
+1.集合（Set）：每个元素只能存在一次，可以方便帮助我们快速去除重复
+2.集合时间复杂度分析：
+LinkedListSet(基于 LinkedList)
+ - add          -> O(n)，每次都要先遍历，看看元素是否存在
+ - contains     -> O(n)，遍历
+ - remove       -> O(n)，遍历
+BstSet
+ - add          -> O(h)，h 为二分搜索树高度，应该写为 O(logn)，平均情况是这样的，最差的时候也会出现 O(n)，就和链表一样
+ - contains     -> O(h)，h 为二分搜索树高度，应该写为 O(logn)
+ - remove       -> O(h)，h 为二分搜索树高度，应该写为 O(logn)
+logn 和 n 的差距，随着数据规模越大，差距越大，logn 远小于 n
+3.映射（Map）：用来存储（键，值）数据对的数据结构（Key，Value）
+4.映射的用途，通过键（Key），来快速寻找值（Value）
+5.映射的时间复杂度同集合
+
